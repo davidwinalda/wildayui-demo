@@ -7,6 +7,8 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= w_js %>
+
     <%= yield :head %>
 
     <link rel="manifest" href="/manifest.json">
@@ -16,7 +18,6 @@
 
     <script src="https://kit.fontawesome.com/c0742580eb.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag "wilday_ui/index", "data-turbo-track": "reload", type: "module" %>
     <%= javascript_importmap_tags %>
   </head>
 
