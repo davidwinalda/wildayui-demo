@@ -7,8 +7,6 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= w_js %>
-
     <%= yield :head %>
 
     <link rel="manifest" href="/manifest.json">
@@ -16,9 +14,15 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
 
+    <!-- Prism.js for Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-ruby.min.js"></script>
+
     <script src="https://kit.fontawesome.com/c0742580eb.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= w_js %>
   </head>
 
   <body>
@@ -74,6 +78,9 @@
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
+        // Initialize Prism for syntax highlighting
+        Prism.highlightAll();
+
           // Sidebar elements
           const sidebar = document.querySelector('.sidebar');
           const backdrop = document.querySelector('.sidebar-backdrop');
