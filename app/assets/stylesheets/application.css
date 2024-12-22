@@ -130,6 +130,7 @@ ul li {
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
+  margin: 10px 0;
 }
 
 .separator {
@@ -520,5 +521,25 @@ ul li {
   .nav-dropdown-item:hover {
     background: #374151;
     color: #818cf8;
+  }
+}
+
+/* Adjust code block font size */
+pre[class*="language-"],
+code[class*="language-"] {
+  font-size: 14px; /* Adjust this value as needed */
+  line-height: 1.5;
+}
+
+/* Optional: Adjust inline code font size */
+:not(pre) > code[class*="language-"] {
+  font-size: 13px; /* Adjust this value as needed */
+}
+
+/* Optional: Make code blocks responsive */
+@media screen and (max-width: 768px) {
+  pre[class*="language-"],
+  code[class*="language-"] {
+    font-size: 12px; /* Smaller font size for mobile */
   }
 }

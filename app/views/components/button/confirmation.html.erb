@@ -82,9 +82,9 @@
           </div>
 
           <div class="component-code">
-  <pre><code class="language-ruby"><%%= w_button "Basic Action",
-    confirm: "Are you sure you want to proceed?"
-  %></code></pre>
+<pre><code class="language-ruby"><%%= w_button "Basic Action",
+  confirm: "Are you sure you want to proceed?"
+%></code></pre>
           </div>
       </div>
     </div>
@@ -112,17 +112,17 @@
           </div>
 
           <div class="component-code">
-  <pre><code class="language-ruby"><%%= w_button "Delete Account",
-    variant: :ghost,
-    theme: { name: :danger },
-    confirm: {
-      title: "Delete Account",
-      message: "This action cannot be undone. All your data will be permanently deleted.",
-      variant: :danger,
-      confirm_text: "Yes, delete my account",
-      cancel_text: "No, keep my account"
-    }
-  %></code></pre>
+<pre><code class="language-ruby"><%%= w_button "Delete Account",
+  variant: :ghost,
+  theme: { name: :danger },
+  confirm: {
+    title: "Delete Account",
+    message: "This action cannot be undone. All your data will be permanently deleted.",
+    variant: :danger,
+    confirm_text: "Yes, delete my account",
+    cancel_text: "No, keep my account"
+  }
+%></code></pre>
           </div>
         </div>
       </div>
@@ -145,18 +145,18 @@
           </div>
 
           <div class="component-code">
-  <pre><code class="language-ruby"><%%= w_button "Submit Application",
-    variant: :solid,
-    theme: { name: :primary },
-    confirm: {
-      title: "Submit Application",
-      message: "Please review your application before submitting. 
-      You won't be able to edit it after submission.",
-      variant: :info,
-      confirm_text: "Yes, submit now",
-      cancel_text: "Review again"
-    }
-  %></code></pre>
+<pre><code class="language-ruby"><%%= w_button "Submit Application",
+  variant: :solid,
+  theme: { name: :primary },
+  confirm: {
+    title: "Submit Application",
+    message: "Please review your application before submitting. 
+    You won't be able to edit it after submission.",
+    variant: :info,
+    confirm_text: "Yes, submit now",
+    cancel_text: "Review again"
+  }
+%></code></pre>
           </div>
         </div>
       </div>
@@ -179,17 +179,17 @@
           </div>
 
           <div class="component-code">
-  <pre><code class="language-ruby"><%%= w_button "Publish Article",
-    variant: :solid,
-    theme: { name: :success },
-    confirm: {
-      title: "Publish Article",
-      message: "Your article will be visible to the public immediately.",
-      variant: :success,
-      confirm_text: "Publish now",
-      cancel_text: "Save as draft"
-    }
-  %></code></pre>
+<pre><code class="language-ruby"><%%= w_button "Publish Article",
+  variant: :solid,
+  theme: { name: :success },
+  confirm: {
+    title: "Publish Article",
+    message: "Your article will be visible to the public immediately.",
+    variant: :success,
+    confirm_text: "Publish now",
+    cancel_text: "Save as draft"
+  }
+%></code></pre>
           </div>
         </div>
       </div>
@@ -211,16 +211,16 @@
           </div>
 
           <div class="component-code">
-  <pre><code class="language-ruby"><%%= w_button "Archive Project",
-    variant: :subtle,
-    confirm: {
-      title: "Archive Project",
-      message: "This project will be moved to archives and team members will lose access.",
-      variant: :warning,
-      confirm_text: "Yes, archive it",
-      cancel_text: "No, keep it active"
-    }
-  %></code></pre>
+<pre><code class="language-ruby"><%%= w_button "Archive Project",
+  variant: :subtle,
+  confirm: {
+    title: "Archive Project",
+    message: "This project will be moved to archives and team members will lose access.",
+    variant: :warning,
+    confirm_text: "Yes, archive it",
+    cancel_text: "No, keep it active"
+  }
+%></code></pre>
           </div>
         </div>
       </div>
@@ -249,32 +249,32 @@
           </div>
 
           <div class="component-code">
-  <pre><code class="language-ruby"><%%= form_with(url: "/test_submit", method: :post) do |f| %>
-    <%%= w_button "Submit Form",
-        variant: :solid,
-        theme: { name: :primary },
-        confirm: {
-          title: "Submit Form",
-          message: "This will submit the form. Continue?",
-          variant: :info,
-          confirm_text: "Yes, submit",
-          cancel_text: "No, cancel",
-        }
-    %>
-  <%% end %>
-  </code></pre>
+<pre><code class="language-ruby"><%%= form_with(url: "/test_submit", method: :post) do |f| %>
+  <%%= w_button "Submit Form",
+      variant: :solid,
+      theme: { name: :primary },
+      confirm: {
+        title: "Submit Form",
+        message: "This will submit the form. Continue?",
+        variant: :info,
+        confirm_text: "Yes, submit",
+        cancel_text: "No, cancel",
+      }
+  %>
+<%% end %>
+</code></pre>
           </div>
           <div class="component-code">
-  <pre><code class="language-js"><%= h('<script>
-    // Listen for form submissions
-    document.addEventListener("submit", (e) => {
-      if (e.target.action.includes("/test_submit")) {
-        e.preventDefault();
-        alert("Form submitted successfully!");
-      }
-    });
-  </script>') %>
-  </code></pre>
+<pre><code class="language-js"><%= h('<script>
+  // Listen for form submissions
+  document.addEventListener("submit", (e) => {
+    if (e.target.action.includes("/test_submit")) {
+      e.preventDefault();
+      alert("Form submitted successfully!");
+    }
+  });
+</script>') %>
+</code></pre>
           </div>
         </div>
       </div>
@@ -297,18 +297,18 @@
           </div>
 
           <div class="component-code">
-  <pre><code class="language-ruby"><%%= w_button "Visit Page",
-    variant: :plain,
-    href: "https://www.google.com",
-    target: "_blank",
-    confirm: {
-      title: "Navigate Away",
-      message: "You will be redirected to another page.",
-      variant: :warning,
-      confirm_text: "Continue",
-      cancel_text: "Stay here"
-    }
-  %></code></pre>
+<pre><code class="language-ruby"><%%= w_button "Visit Page",
+  variant: :plain,
+  href: "https://www.google.com",
+  target: "_blank",
+  confirm: {
+    title: "Navigate Away",
+    message: "You will be redirected to another page.",
+    variant: :warning,
+    confirm_text: "Continue",
+    cancel_text: "Stay here"
+  }
+%></code></pre>
           </div>
         </div>
       </div>
